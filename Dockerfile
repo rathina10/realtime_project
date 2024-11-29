@@ -6,12 +6,12 @@ RUN yum install -y httpd && yum clean all
 
 # Create a directory for serving the image
 # Use the standard Apache web directory instead of /home/ubuntu/
-RUN mkdir -p /home/ubuntu/
+RUN mkdir -p /home/ubuntu
 
 # Copy your downloaded image into the container
 # Replace the filenames below with the actual files present in the build context
-COPY uwp4570280.jpeg /home/ubuntu/
-COPY uwp4570284.jpeg /home/ubuntu/
+COPY uwp4570280.jpeg /home/ubuntu
+COPY uwp4570284.jpeg /home/ubuntu
 
 
 # Expose port 80 to allow web access
