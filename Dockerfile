@@ -10,8 +10,8 @@ RUN mkdir -p /home/ubuntu
 
 # Copy your downloaded image into the container
 # Replace the filenames below with the actual files present in the build context
-COPY uwp4570280.jpeg /home/ubuntu
-COPY uwp4570284.jpeg /home/ubuntu
+RUN curl -o /home/ubuntu/image.jpg https://wallpapercave.com/uwp/uwp4570284.jpeg
+
 
 
 # Expose port 80 to allow web access
